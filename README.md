@@ -2,14 +2,14 @@
 ## Installation
 Install the package through `npm`
 ```
-npm install vuetify-message
+npm install vuetify-floating-message
 ```
 After the package installation is done inside plugins/vuetify.js add the following code. <br>
 
 ```
-Vue.use(VuetifyMessage, { vuetify }); // Where vuetify is an instance of imported Vuetify vuetify.js file
+Vue.use(VuetifyFloatingMessage, { vuetify }); // Where vuetify is an instance of imported Vuetify vuetify.js file
 ```
-**Note:** **Do NOT** forget to add the `vuetify-message` inside vue.config.js under `transpileDependencies`.
+**Note:** **Do NOT** forget to add the `vuetify-floating-message` inside vue.config.js under `transpileDependencies`.
 ## Usage
 Now from every vue component in your app, you can show a `floating message` with the following codes.
 ```

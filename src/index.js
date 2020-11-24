@@ -1,14 +1,14 @@
-import VuetifyMessage from './VuetifyMessage.vue';
+import VuetifyFloatingMessage from './VuetifyFloatingMessage.vue';
 
 export default function install(Vue, options = {}) {
     const property = '$message';
     const vuetify = options.vuetify;
     delete options.vuetify;
     if(!vuetify) {
-        console.warn("The module VuetifyMessage needs vuetify instance. Use Vue.use(VuetifyMessage, { vuetify })");
+        console.warn("The module VuetifyFloatingMessage needs vuetify instance. Use Vue.use(VuetifyFloatingMessage, { vuetify })");
         return;
     }
-    const Ctor = Vue.extend(Object.assign({ vuetify }, VuetifyMessage));
+    const Ctor = Vue.extend(Object.assign({ vuetify }, VuetifyFloatingMessage));
     function createDialogComponent(options) {
       const container = document.querySelector('[data-app=true]') || document.body;
       const component = new Ctor(Object.assign({}, {

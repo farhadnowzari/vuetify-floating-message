@@ -1,14 +1,14 @@
 {
   "author": "Farhad Nowzari",
-  "name": "vuetify-message",
+  "name": "vuetify-floating-message",
   "description": "This plugin make the vuetify custom floating messages/snackbars easier to use.",
   "version": "1.0.0",
-  "main": "dist/VuetifyMessage.umd.js",
-  "module": "dist/VuetifyMessage.esm.js",
-  "unpkg": "dist/VuetifyMessage.min.js",
+  "main": "dist/VuetifyFloatingMessage.umd.js",
+  "module": "dist/VuetifyFloatingMessage.esm.js",
+  "unpkg": "dist/VuetifyFloatingMessage.min.js",
   "license": "ISC",
   "browser": {
-    "./sfc": "src/VuetifyMessage.vue"
+    "./sfc": "src/VuetifyFloatingMessage.vue"
   },
   "keywords": [
     "vuejs",
@@ -21,18 +21,18 @@
     "floating"
   ],
   "bugs": {
-    "url": "https://github.com/farhadnowzari/vuetify-message/issues"
+    "url": "https://github.com/farhadnowzari/vuetify-floating-message/issues"
   },
-  "homepage": "https://github.com/farhadnowzari/vuetify-message#readme",
+  "homepage": "https://github.com/farhadnowzari/vuetify-floating-message#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/farhadnowzari/vuetify-message.git"
+    "url": "git+https://github.com/farhadnowzari/vuetify-floating-message.git"
   },
   "scripts": {
     "build": "npm run lint & npm run build:umd & npm run build:es & npm run build:unpkg & npm run lint:fix",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/VuetifyMessage.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/VuetifyMessage.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/VuetifyMessage.min.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/VuetifyFloatingMessage.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/VuetifyFloatingMessage.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/VuetifyFloatingMessage.min.js",
     "lint": "eslint --ext js --ext vue src",
     "lint:fix": "npm run lint -- --fix"
   },

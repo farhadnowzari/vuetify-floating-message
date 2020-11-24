@@ -4,7 +4,7 @@ import buble from '@rollup/plugin-buble';
 export default {
     input: 'src/index.js',
     output: {
-        name: 'VuetifyMessage',
+        name: 'VuetifyFloatingMessage',
         exports: 'named',
     },
     plugins: [

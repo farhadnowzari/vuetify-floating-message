@@ -79,7 +79,7 @@ export default {
             this.toggler = false;
         }
     },
-    name: 'vuetify-message',
+    name: 'vuetify-floating-message',
     props: {
         dismissable: Boolean,
         icon: String,
